@@ -1,11 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mynerve";
 }
 
 body {
   font-family: sans-serif;
+  text-align: center;
+  background-color: #cdd1ff;
+}
+
+main {
+  width: 375px;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.nomes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.nome label {
+  font-weight: bold;
+}
+
+.players {
+  width: 120px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #232323;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#start {
+  margin: 12px 0;
+  width: 120px;
+  border-radius: 50px;
+  border: 1px solid #232323;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+
+.gameBoard {
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #gameBoard {
@@ -16,6 +65,7 @@ body {
   gap: 0.5rem;
   margin-bottom: 1.5rem;
   max-width: 19rem;
+  box-shadow: 22px 8px 22px 8px rgba(23, 23, 23, 0.2);
 }
 
 #gameBoard span {
